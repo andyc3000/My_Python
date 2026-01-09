@@ -10,6 +10,8 @@ The game would then need to display these parts of the hangman as each letter is
 
 import random
 
+from word_list import word_list
+
 hangmanpics = ['''
   +---+
   |   |
@@ -67,9 +69,9 @@ hangmanpics = ['''
 =========
 ''']
 
-words = ["banana", "apple", "pear", "bear", "mouse"] #build a list of words the computer can choose from
+#words = ["banana", "apple", "pear", "bear", "mouse"] #build a list of words the computer can choose from
 
-guess_word = random.choice(words) #using the random function to allow the computer to pick a random word
+guess_word = random.choice(word_list) #using the random function to allow the computer to pick a random word
 word_length = len(guess_word) #set the word length for using in the range later
 end_of_game = False
 lives = 6
