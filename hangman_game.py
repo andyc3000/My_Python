@@ -72,7 +72,7 @@ words = ["banana", "apple", "pear", "bear", "mouse"] #build a list of words the 
 guess_word = random.choice(words) #using the random function to allow the computer to pick a random word
 word_length = len(guess_word) #set the word length for using in the range later
 end_of_game = False
-lives = 7
+lives = 6
 display = [] #set a blank list like an array
 
 for i in range(word_length): # for loop to add the number of underscores dependant on the word chosen.
